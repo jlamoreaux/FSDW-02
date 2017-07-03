@@ -1,0 +1,301 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  text-align: right;
+}
+
+hr {
+  border-color: #7d97ad;
+}
+
+h1 {
+  /*font-family: helvetica, arial, sans-serif;*/
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+h2 {
+  /*color: #7d97ad;*/
+  font-weight: 800;
+}
+
+h3 {
+  /*font-family: helvetica, arial, sans-serif;*/
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+h4 {
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  padding:5px;
+  text-align: left;
+  text-indent: 1em;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: #2d3c49;
+  color: #dfe6ec;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#profile-photo {
+  float: left;
+  margin: 5px 10px;
+}
+
+.main-page {
+  /*width: 100%;*/
+  /*margin: 50px auto;*/
+  /*padding: 25px 1px 1px;*/
+  background-image: url(../images/main_photo.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#blurb {
+  background-color: rgba(20, 26, 31, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.featured-work {
+  clear: both;
+}
+
+.project {
+  margin: 10px;
+  padding: 0;
+}
+
+footer {
+  order: 9;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px)  {
+
+  #about-me {
+    order:1;
+    width: 28%;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .main-page {
+    /*width: 100%;
+    margin: 50px auto;
+    background-image: url(images/main_photo.jpg);
+    background-size: cover;
+    position: relative;*/
+    height: 400px;
+    width: 62%;
+    order: 2;
+    right: 0;
+    margin: 0 0 0 15px;
+  }
+
+  .featured-work {
+    order: 3;
+  }
+
+  #portfolio-line {
+    display: block;
+  }
+
+  .thumbnail {
+    width: 200px;
+    padding: 5px 15px;
+    box-shadow: 10px 10px rgba(20, 26, 31, 0.8);
+  }
+
+  .heading {
+    padding: 170px 5px 5px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: auto auto 5px;
+  }
+
+  h2 {
+    font-size: 20px;
+
+  }
+
+  h3 {
+    font-size: 15px;
+    margin: 0 auto auto;
+  }
+
+  /*#blurb {
+    background-color: rgba(20, 26, 31, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }*/
+
+  p {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 500px)  {
+
+  .heading {
+    padding: 48px 5px 5px;
+  }
+
+  #about-me {
+    order: 2;
+  }
+
+  .main-page {
+    height: 250px;
+    order: 1;
+    width: 100%;
+  }
+
+  .featured-work {
+    order: 3;
+  }
+
+  #profile-photo {
+    width: 33%;
+  }
+
+  /*body {
+    background-color: #2d3c49;
+    color: #dfe6ec;
+  }*/
+
+  h1 {
+    color: #dfe6ec;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    color: #dfe6ec;
+    padding: 0;
+    margin: 5px;
+    font-size: 10px;
+  }
+
+  h4 {
+    color: #dfe6ec;
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+    text-align: left;
+    padding: 0 10px
+  }
+
+  .project {
+    width: 80%;
+    margin: auto;
+  }
+
+  .thumbnail {
+    width: 100%;
+    margin: auto;
+    box-shadow: 5px 5px rgba(20, 26, 31, 0.8);
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .main-page {
+    height: 600px;
+    width: 62%;
+    margin: 0 0 0 25px;
+    float: right;
+  }
+
+  .heading {
+    padding: 130px 5px 5px;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0 0 0;
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 13px;
+  }
+
+  .featured-work {
+    padding: 30px 0 0;
+    width: 100%
+  }
+
+  .project {
+    width: 30%;
+    margin: auto;
+  }
+
+  #portfolio-line {
+    display: block;
+    margin: 0 0 18px;
+  }
+
+  #about-me {
+    display: block;
+    float: left;
+    background-color: #141a1f;
+    width: 28%;
+    margin: 0 0 0 5px;
+    padding: 15px 10px;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .container {
+    display: flex;
+    clear: both;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .thumbnail {
+    width: 100%;
+    box-shadow: 15px 15px rgba(20, 26, 31, 0.8);
+  }
+}
